@@ -17,7 +17,7 @@ http.createServer((req, res) => {
                 res.setHeader("Content-Type", "text/css");
                 res.write(style);
                 break;
-            case "/icon.ico":
+            case "/icons/icon.ico":
             case "/icons/icon.ico":
                 res.setHeader("Content-Type", "image/vnd.microsoft.icon");
                 res.write(favIcon);
