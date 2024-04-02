@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    height: 100dvh;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#messages li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+}
+
+#messages li:nth-child(odd) {
+    align-self: flex-start;
+    background-color: #e2e3e5;
+}
+
+#messages li:nth-child(even) {
+    align-self: flex-end;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+#input {
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#form>button {
+    background: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form>button:hover {
+    background-color: #0056b3;
+}
